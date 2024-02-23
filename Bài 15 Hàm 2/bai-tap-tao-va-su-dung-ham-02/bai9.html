@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function count(str, char) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+          if (str[i] !== char) {
+            //  sử dụng continue để chuyển sang lần lặp tiếp theo
+            continue;
+          }
+          // nếu đến được đây, điều đó có nghĩa là str[i] và char giống nhau
+          // vì vậy sẽ tăng thêm số lượng (count)
+          count++;
+        }
+        return count;
+      }
+      //   function count(str, char) {
+      //     let count = 0;
+
+      //     for (let i = 0; i < str.length; i++) {
+      //       if (str.charAt(i) == char) {
+      //         count++;
+      //       }
+      //       else if (str.charAt(i) !== char) {
+      //         count--;
+      //       }
+      //     }
+      //     return count;
+      //   }
+
+      let str = prompt("Type in something: ");
+      let char = prompt("Type in a character to count: ");
+      document.write(count(str, char));
+    </script>
+  </body>
+</html>

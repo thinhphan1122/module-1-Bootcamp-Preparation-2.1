@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Return the smallest integer of three
+      function min(a, b, c) {
+        if ((a <= b && b < c) || (a < b && b <= c)) {
+          return document.write(a + " is the smallest interger.");
+        } else if (b < a && b <= c) {
+          return document.write(b + " is the smallest interger.");
+        } else if (c <= a && c < b) {
+          return document.write(c + " is the smallest interger.");
+        } else {
+          return document.write("All intergers are equal: " + a + " = " + b + " = " + c);
+        }
+      }
+
+      // min(1, 2, 3);
+
+      let num1 = prompt("Type number a:");
+      let num2 = prompt("Type number b:");
+      let num3 = prompt("Type number c:");
+
+      let a = parseInt(num1);
+      let b = parseInt(num2);
+      let c = parseInt(num3);
+      
+      min(a, b, c);
+
+    </script>
+  </body>
+</html>

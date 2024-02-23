@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#background {
+  z-index: 10;
+}
+
+#hill {
+  z-index: 20;
+}
+
+#platform {
+  z-index: 0;
+} */

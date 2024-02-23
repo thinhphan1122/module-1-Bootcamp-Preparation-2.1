@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th><label for="amount">Amount</label></th>
+        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>From Currency</th>
+        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>To Currency</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><input type="text" id="amount" /></td>
+        <td></td>
+        <td>
+          <select id="from" style="width: 120px">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+          </select>
+        </td>
+        <td></td>
+        <td>
+          <select id="to" style="width: 120px">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+          </select>
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>
+          <button
+            onclick="convert()"
+            style="
+              color: white;
+              background-color: rgb(170, 136, 235);
+              width: 120px;
+            "
+          >
+            <strong>Convert</strong>
+          </button>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <p id="result"></p>
+  </body>
+</html>
+<script src="index.js"></script>

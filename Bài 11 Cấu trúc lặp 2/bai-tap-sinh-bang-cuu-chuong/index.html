@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sout, x, y;
+      table = "<table border='1' width='500' cellspacing='0' cellpadding='20'>";
+
+      for (x = 1; x <= 10; x++) {
+        table = table + "</tr>";
+        for (y = 1; y <= 10; y++) {
+          table = table + "<td>" + y + "*" + x + "=" + x * y + "</td>";
+        }
+        table = table + "</tr>";
+      }
+      table = table + "</table>";
+      document.write(table);
+
+    </script>
+    </script>
+  </body>
+</html>

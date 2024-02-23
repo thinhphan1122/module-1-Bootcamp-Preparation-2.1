@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Reverse an array of multiple random intergers
+      function reverse(a, b, c) {
+        let x = [a, b, c];
+        let y = x.reverse();
+
+        // return (document.write(x); // [ a, b, c ]
+        return document.write(y); // [ c, b, a ]
+      }
+
+      let num1 = prompt("Type in the first integer: ");
+      let num2 = prompt("Type in the second integer: ");
+      let num3 = prompt("Type in the third integer: ");
+
+      let a = parseInt(num1);
+      let b = parseInt(num2);
+      let c = parseInt(num3);
+
+      reverse(a, b, c);
+    </script>
+  </body>
+</html>

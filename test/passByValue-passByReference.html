@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //pass by Value
+      var a = 3;
+      var b = a;
+      console.log("a1: " + a);
+      console.log("b1: " + a);
+
+      a = 4;
+      console.log("a2: " + a);
+      console.log("b2: " + a);
+
+      //pass by Reference
+      var objA = { id: 1, name: "Ty" };
+      var objB = objA;
+      console.log("objA1: " + objA); 
+      console.log("objB1: " + objB);
+
+      objA.name = "Teo";
+      console.log("objA2: " + objA);
+      console.log("objB2: " + objB);
+    </script>
+  </body>
+</html>

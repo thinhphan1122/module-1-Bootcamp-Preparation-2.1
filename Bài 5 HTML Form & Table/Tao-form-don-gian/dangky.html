@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANGKY</title>
+    <style>
+      body {
+        background-color: #D5FEFF;
+      }
+
+      .dangky {
+        width: 50%;
+        margin: auto;
+        padding: 5px;
+        background-color: rgb(245, 244, 168);
+      }
+
+      .form-title {
+        background-color: rgb(122, 226, 212);
+        color: rgb(40, 120, 194);
+        text-align: left;
+      }
+      
+      .form-field {
+        color:blue;
+        margin-left: 0px;
+      }
+
+      .form-item {
+        margin-bottom: 10px;
+       }
+
+      .side-left {
+        margin-left: -1px;
+      }
+
+      .side-left-2 {
+        margin-left: 94px;
+      }
+
+    </style>
+  <body>
+     <form class="dangky">
+      <div for="dangky" class="form-title"><strong>ĐĂNG KÝ HỌC VIÊN</strong></div>
+      <br>
+      <div class="form-item side-left">
+          <label for="fullname" class="form-field";">Họ và tên</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fullname" style="width: 50%;">
+      </div>
+        
+      <div class="form-item">
+          <label for="birthday" class="form-field">Ngày sinh</label>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" style="width: 25%;" name="birthday"/>
+      </div>
+          
+       <div class="form-item">
+          <label for="gender" class="form-field">Giới tính</label>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="male" /> Nam
+          <input type="radio" name="female" /> Nữ
+      </div>
+
+      <div class="form-item">
+          <label for="address" class="form-field">Địa chỉ</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" name="address" style="width: 45%; height: 65px;">
+      </div>
+
+      <div class="form-item">
+          <label for="class" class="form-field">Lớp</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <select>
+            <option name="class" value="—Chọn lớp—">—Chọn lớp—</option>
+            <option name="class" value="Lớp 1">Lớp 1</option>
+            <option name="class" value="Lớp 2">Lớp 2</option>
+            <option name="class" value="Lớp 3">Lớp 3</option>
+          </select>
+      </div>
+
+      <div class="form-item">
+          <label for="email" class="form-field">Email</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" name="email" />
+      </div>
+
+      <div class="form-item side-left">
+          <label for="phone" class="form-field">Điện thoại</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" name="phone"/>
+      </div>
+
+      <div class="form-item side-left-2">
+        <input type="submit" style="width: 86px;" name="Submit Form" value="Đăng ký" />
+        <input type="reset" style="width: 87px;" name="Reset Form" value="Nhập lại" />
+      </div>
+    </form>
+  </body>
+</html>

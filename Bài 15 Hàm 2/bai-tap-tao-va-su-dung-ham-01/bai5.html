@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = [
+        "Polaris",
+        "Aldebaran",
+        "Deneb",
+        "Vega",
+        "Altair",
+        "Dubhe",
+        "Regulus",
+      ];
+      let y = [
+        "Ursa Minor",
+        "Tarurus",
+        "Cygnus",
+        "Lyra",
+        "Aquila",
+        "Ursa Major",
+        "Leo",
+      ];
+
+      //   function check(z) {
+      //     let result = "";
+      //     for (let i = 0; i < x.length; i++) {
+      //       if (z === x[i]) {
+      //         for (let j = 0; j < y.length; j++) {
+      //           if (i === j) {
+      //             result = y[j];
+      //             break;
+      //           }
+      //         }
+      //         break;
+      //       }
+      //     }
+      //     if (result === "") {
+      //       result = "Star not found";
+      //     }
+      //     return result;
+      //   }
+
+      //   let z = prompt("Type in the name of a star: ");
+      //   document.write(check(z));
+
+      function check(z) {
+        let index_x = "";
+        for (let i = 0; i < x.length; i++) {
+          if (z == x[i]) {
+            index_x = i;
+            for (let j = 0; j < y.length; j++) {
+              if (i == j) return alert(y[j]);
+            }
+          }
+        }
+        if (index_x == "") {
+          return alert("Star not found");
+        }
+      }
+
+      let z = prompt("Type in the name of a star: ");
+      check(z);
+    </script>
+  </body>
+</html>

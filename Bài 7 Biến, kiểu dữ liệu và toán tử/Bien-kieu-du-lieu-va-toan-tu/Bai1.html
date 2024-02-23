@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      inputMath = prompt("Nhap diem Toan");
+      inputPhysics = prompt("Nhap diem Ly");
+      inputBiology = prompt("Nhap diem Sinh");
+      let math = parseInt(inputMath);
+      let physics = parseInt(inputPhysics);
+      let biology = parseInt(inputBiology);
+      average = (math + physics + biology) / 3;
+      document.write("Diem trung cong 3 mon Toan, Ly, Hoa la " + average);
+      document.write("<br>");
+      sum = math + physics + biology;
+      document.write("Tong diem 3 mon Toan, Ly, Hoa la " + sum);
+    </script>
+  </body>
+</html>
